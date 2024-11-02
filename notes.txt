@@ -1,0 +1,14 @@
+1 > how to install django and file structure
+
+install uv
+
+uv venv
+
+.venv\Scripts\activate
+
+uv pip install Django
+
+django-admin startproject "name"  -- you only use startproject once
+
+python manage.py runserver - to run the project
+python manage.py runserver "8001" - to run on any different port
