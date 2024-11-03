@@ -12,3 +12,27 @@ django-admin startproject "name"  -- you only use startproject once
 
 python manage.py runserver - to run the project
 python manage.py runserver "8001" - to run on any different port
+
+
+2 > templates and errors in django 
+
+flow of django
+
+request comes to the django
+then it goes to the url resolver - most of the time we dont have access to it (99%)
+then it goes to urls.py - where it will decide which route to go to - /admin , /login etc
+then it goes to views.py - these are basically controllers (the same you studied in node)
+it can fetch from DB if needed
+then it sends the response to the django which further on send the request
+
+
+templates - here comes the html files
+
+static - here comes the tailwind and js files
+
+add templates in setting.py in dirs for rendering
+
+templating engine 
+
+path should be accessable - go in settings.py and change STATIC_URL
+
