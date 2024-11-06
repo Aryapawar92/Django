@@ -36,3 +36,22 @@ templating engine
 
 path should be accessable - go in settings.py and change STATIC_URL
 
+
+3 > Jinja2 and apps
+
+run python manage.py startapp 'name' to create the folder for an app
+
+your main project doesnt know that there are new app
+so you should make the main project aware that there are new apps
+
+therefore go to settings
+
+go to installed_apps and add your app name
+
+so there are two types of urls
+one of the main project and others of the app
+therefore to go from main project to the app urls 
+use 'include' in urls.py of main project
+
+
+
