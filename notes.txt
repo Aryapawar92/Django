@@ -54,4 +54,48 @@ therefore to go from main project to the app urls
 use 'include' in urls.py of main project
 
 
+3 > how to add tailwind to django 
+
+uv pip install django-tailwind
+
+install pip first in venv : python -m ensurepip --upgrade
+
+then install reload = pip install 'django-tailwind[reload]'
+
+add tailwind to settings.py
+
+run tailwind : python manage.py tailwind init
+
+in settings add : 
+tailwind_app_name = 'theme'
+internal_ips = ['127.0.0.1']
+
+add npm path because you use windows 
+
+NPM_BIN_PATH = 'C:/Program Files/nodejs/npm.cmd'
+
+then run this command
+python manage.py tailwind install
+
+run tailwind and server on do different terminal
+
+python manage.py tailwind start
+
+for automated reloading 
+
+django_browser_reload add it in settings.py
+
+then in urls.py of main add - path("_reload__/", include("django_browser_reload.urls")),
+
+
+django orm talks on behaves of you
+
+python manage.py migrate - this is w=for you to access admin panel
+
+python manage.py createsuperuser - for making an admin
+
+
+
+
+
 

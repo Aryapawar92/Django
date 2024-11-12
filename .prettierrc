@@ -1,5 +1,8 @@
 {
   "tabWidth": 2,
   "singleQuote": true,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "lf",
+  "trailingComma": "none",
+  "bracketSpacing": true
 }
