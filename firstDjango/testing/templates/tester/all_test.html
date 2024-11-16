@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Test</title>
-  </head>
-  <body>
-    <h1>All types of Testing available</h1>
-  </body>
-</html>
+{% extends "layout.html" %}
+
+0{% block title %}
+
+chai Page
+{% endblock %}
+{% block content %}
+<h1>All chai for you</h1>
+
+<div class='grid grid-cols-3 gap-4'>
+
+  {% for chai in chais %}
+    
+      <img src="{{chai.image.url}}" alt="" class ="bg-slate-600">
+      <h3>{{chai.name}}</h3>
+        test
+
+    </div>
+
+  {% endfor %}
+{% endblock %} I

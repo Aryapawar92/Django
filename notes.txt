@@ -95,6 +95,22 @@ python manage.py migrate - this is w=for you to access admin panel
 python manage.py createsuperuser - for making an admin
 
 
+4 > handle models and urls to django
+
+in the models.py of your app you can make model schema
+
+in the settings.py of your main project  ( you can change the database)
+make the following changes 
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+- this is to store the image files in url 
+
+do makemigrations to only app that you are working on 
+python manage.py makemigrations 'app name' = In Django, migration refers to the process of making changes to the database schema to match the current state of your Django models.
+
+static  - load the files that you changed in settings.py - for eg the media
 
 
 
